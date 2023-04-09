@@ -1,6 +1,8 @@
 from __future__ import annotations
+import plotly.graph_objects as go
 import numpy as np
 from numpy.linalg import inv, det, slogdet
+
 
 
 class UnivariateGaussian:
@@ -51,8 +53,12 @@ class UnivariateGaussian:
         Sets `self.mu_`, `self.var_` attributes according to calculated estimation (where
         estimator is either biased or unbiased). Then sets `self.fitted_` attribute to `True`
         """
-        raise NotImplementedError()
-
+        if(self.biased_): #TODO: check if we need to deal with this case
+            self.mu_ = np.mean(X)
+            self.var_ = X.var()
+        else:
+            self.mu_ = np.mean(X)
+            self.var_ = X.var(ddof=1)
         self.fitted_ = True
         return self
 
@@ -76,7 +82,12 @@ class UnivariateGaussian:
         """
         if not self.fitted_:
             raise ValueError("Estimator must first be fitted before calling `pdf` function")
-        raise NotImplementedError()
+        return UnivariateGaussian.pdf_calc(X, self.mu_, self.var_)
+
+    @staticmethod
+    def pdf_calc(sample: np.ndarray, mu: float, var: float)-> np.ndarray:
+        sigma = np.sqrt(var)
+        return 1/(sigma * np.sqrt(2 * np.pi)) *np.exp(- (sample - mu)**2 / (2 * sigma**2))
 
     @staticmethod
     def log_likelihood(mu: float, sigma: float, X: np.ndarray) -> float:
@@ -97,7 +108,9 @@ class UnivariateGaussian:
         log_likelihood: float
             log-likelihood calculated
         """
-        raise NotImplementedError()
+        m= X.shape[0]
+        return -0.5 * m * np.log(2*np.pi*sigma) - (1/(2*sigma)) *np.sum((X-mu)*(X-mu))
+
 
 
 class MultivariateGaussian:
@@ -143,12 +156,13 @@ class MultivariateGaussian:
         Sets `self.mu_`, `self.cov_` attributes according to calculated estimation.
         Then sets `self.fitted_` attribute to `True`
         """
-        raise NotImplementedError()
-
+        self.mu_ = np.mean(X, axis=0)
+        self.cov_ = np.cov(X, rowvar=False)
         self.fitted_ = True
         return self
 
-    def pdf(self, X: np.ndarray):
+
+    def pdf(self, X: np.ndarray) -> np.ndarray:
         """
         Calculate PDF of observations under Gaussian model with fitted estimators
 
@@ -168,7 +182,9 @@ class MultivariateGaussian:
         """
         if not self.fitted_:
             raise ValueError("Estimator must first be fitted before calling `pdf` function")
-        raise NotImplementedError()
+        n_features = X.shape[1]
+        return (1 / np.sqrt(np.power(2 * np.pi, n_features) * det(self.cov_))) * \
+               np.exp(-0.5 * np.sum(((X - self.mu_) @ inv(self.cov_) * (X - self.mu_)), axis=1))
 
     @staticmethod
     def log_likelihood(mu: np.ndarray, cov: np.ndarray, X: np.ndarray) -> float:
@@ -189,4 +205,14 @@ class MultivariateGaussian:
         log_likelihood: float
             log-likelihood calculated over all input data and under given parameters of Gaussian
         """
-        raise NotImplementedError()
+        m_samples = X.shape[0]
+        d_features = X.shape[1]
+        logdet = slogdet(cov)
+        return -0.5 * (m_samples*(d_features* np.log(2*np.pi) + logdet[0]*logdet[1]) +
+                       np.sum((X-mu) @ inv(cov) * (X-mu)))
+
+if __name__ == '__main__':
+    x = np.array([1, 5, 2, 3, 8, -4, -2, 5, 1, 10, -10, 4, 5, 2, 7, 1, 1, 3, 2, -1, -3, 1, -4, 1, 2, 1,
+              -4, -4, 1, 3, 2, 6, -6, 8, 3, -6, 4, 1, -2, 3, 1, 4, 1, 4, -2, 3, -1, 0, 3, 5, 0, -2])
+    print(UnivariateGaussian.log_likelihood(1, 1, x))
+    print(UnivariateGaussian.log_likelihood(10, 1, x))

@@ -3,4 +3,6 @@ from .base import *
 __all__ = ["BaseEstimator",
            "BaseDimReducer",
            "learners",
-           "metrics"]
+           "metrics",
+           "model_selection",
+           "utils"]
