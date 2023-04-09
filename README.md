@@ -6,14 +6,14 @@ The following repository contains:
 2) course exercises - application of the algorithms on real data.
 
 # Summary
-** ex1 - Estimation Theory**
+**ex1 - Estimation Theory**
 
-** ex2 - Linear Regression**
+**ex2 - Linear Regression**
 
-** ex3 - Classification**
+**ex3 - Classification**
 
-** ex4 - PAC  Ensemble Methods**
+**ex4 - PAC  Ensemble Methods**
 
-** ex5 - PCA, Kernels, Regularization and Cross-Validation**
+**ex5 - PCA, Kernels, Regularization and Cross-Validation**
 
-** ex6 - Convex Optimization & Gradient Descent**
+**ex6 - Convex Optimization & Gradient Descent**
