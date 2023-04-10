@@ -85,7 +85,7 @@ The following repository contains:
 
 #### Compare exponentially decaying rates
 
-![schema1](./images_readme/ex6/compare.jpg)
+![schema1](./images_readme/ex6/compare.jpeg)
 
 #### Regularized Logistic Regression
 
