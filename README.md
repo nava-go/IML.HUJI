@@ -6,7 +6,7 @@ The following repository contains:
 2) course exercises - application of the algorithms on real data.
 
 # Summary
-###ex1 - Estimation Theory
+### ex1 - Estimation Theory
 
 ![schema1](./images/ex1/plot_q2.jpg)
 
@@ -15,13 +15,13 @@ The following repository contains:
 ![schema1](./images/ex1/plot_q5.jpg)
 
 
-###ex2 - Linear Regression
+### ex2 - Linear Regression
 
 ![schema1](./images/ex2/poly_q2_scatter.jpg)
 
 ![schema1](./images/ex2/poly_q3.jpg)
 
-###ex3 - Classification**
+### ex3 - Classification**
 #### Preceptrom Classifier
 separable data:
 ![schema1](./images/ex3/separable.jpg)
@@ -35,7 +35,7 @@ inseparble data:
 
 ![schema1](./images/ex3/1-sofi sofani.jpg)
 
-###ex4 - PAC  Ensemble Methods**
+### ex4 - PAC  Ensemble Methods**
 #### data without noise
 
 ![schema1](./images/ex4/no_noise/1.jpg)
@@ -56,7 +56,7 @@ inseparble data:
 
 ![schema1](./images/ex4/with_noise/4.jpg)
 
-###ex5 - PCA, Kernels, Regularization and Cross-Validation
+### ex5 - PCA, Kernels, Regularization and Cross-Validation
 
 ![schema1](./images/ex5/1.1.jpg)
 
@@ -72,7 +72,7 @@ inseparble data:
 
 ![schema1](./images/ex5/7.jpg)
 
-###ex6 - Convex Optimization & Gradient Descent
+### ex6 - Convex Optimization & Gradient Descent
 
 #### Descent trajectory with L1 and L2
 ![schema1](./images/ex6/gt_l1.jpg)
