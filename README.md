@@ -6,6 +6,7 @@ The following repository contains:
 2) course exercises - application of the algorithms on real data.
 
 # Summary
+
 ### ex1 - Estimation Theory
 
 ![schema1](./images_readme/ex1/plot_q2.png)
@@ -21,14 +22,14 @@ The following repository contains:
 
 ![schema1](./images_readme/ex2/poly_q3.png)
 
-### ex3 - Classification**
+### ex3 - Classification
 
 #### Preceptrom Classifier
 
 ##### separable data:
 ![schema1](./images_readme/ex3/separable.png)
 
-#####inseparble data:
+##### inseparable data:
 ![schema1](./images_readme/ex3/inseparable.png)
 
 #### Bayes Classifier
@@ -84,7 +85,7 @@ The following repository contains:
 
 #### Compare exponentially decaying rates
 
-![schema1](./images_readme/ex6/compare.png)
+![schema1](./images_readme/ex6/compare.jpg)
 
 #### Regularized Logistic Regression
 
