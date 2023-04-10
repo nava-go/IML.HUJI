@@ -8,82 +8,84 @@ The following repository contains:
 # Summary
 ### ex1 - Estimation Theory
 
-![schema1](./images_readme/ex1/plot_q2.jpg)
+![schema1](./images_readme/ex1/plot_q2.png)
 
-![schema1](./images_readme/ex1/plot_q3.jpg)
+![schema1](./images_readme/ex1/plot_q3.png)
 
-![schema1](./images_readme/ex1/plot_q5.jpg)
+![schema1](./images_readme/ex1/plot_q5.png)
 
 
 ### ex2 - Linear Regression
 
-![schema1](./images_readme/ex2/poly_q2_scatter.jpg)
+![schema1](./images_readme/ex2/poly_q2_scatter.png)
 
-![schema1](./images_readme/ex2/poly_q3.jpg)
+![schema1](./images_readme/ex2/poly_q3.png)
 
 ### ex3 - Classification**
 
 #### Preceptrom Classifier
+
 ##### separable data:
-![schema1](./images_readme/ex3/separable.jpg)
+![schema1](./images_readme/ex3/separable.png)
 
 #####inseparble data:
-![schema1](./images_readme/ex3/inseparable.jpg)
+![schema1](./images_readme/ex3/inseparable.png)
 
 #### Bayes Classifier
 
-![schema1](./images_readme/ex3/2-sofi sofani.jpg)
+![schema1](./images_readme/ex3/1_bayes.png)
 
-![schema1](./images_readme/ex3/1-sofi sofani.jpg)
+![schema1](./images_readme/ex3/2_bayes.png)
 
 ### ex4 - PAC  Ensemble Methods**
+
 #### data without noise
 
-![schema1](./images_readme/ex4/no_noise/1.jpg)
+![schema1](./images_readme/ex4/no_noise/1.png)
 
-![schema1](./images_readme/ex4/no_noise/2.jpg)
+![schema1](./images_readme/ex4/no_noise/2.png)
 
-![schema1](./images_readme/ex4/no_noise/3.jpg)
+![schema1](./images_readme/ex4/no_noise/3.png)
 
-![schema1](./images_readme/ex4/no_noise/4.jpg)
+![schema1](./images_readme/ex4/no_noise/4.png)
 
 #### data with noise
 
-![schema1](./images_readme/ex4/with_noise/1.jpg)
+![schema1](./images_readme/ex4/with_noise/1.png)
 
-![schema1](./images_readme/ex4/with_noise/2.jpg)
+![schema1](./images_readme/ex4/with_noise/2.png)
 
-![schema1](./images_readme/ex4/with_noise/3.jpg)
+![schema1](./images_readme/ex4/with_noise/3.png)
 
-![schema1](./images_readme/ex4/with_noise/4.jpg)
+![schema1](./images_readme/ex4/with_noise/4.png)
 
 ### ex5 - PCA, Kernels, Regularization and Cross-Validation
 
-![schema1](./images_readme/ex5/1.1.jpg)
+![schema1](./images_readme/ex5/1.1.png)
 
-![schema1](./images_readme/ex5/1.2.jpg)
+![schema1](./images_readme/ex5/1.2.png)
 
-![schema1](./images_readme/ex5/1.3.jpg)
+![schema1](./images_readme/ex5/1.3.png)
 
-![schema1](./images_readme/ex5/2.1.jpg)
+![schema1](./images_readme/ex5/2.1.png)
 
-![schema1](./images_readme/ex5/2.2.jpg)
+![schema1](./images_readme/ex5/2.2.png)
 
-![schema1](./images_readme/ex5/2.3.jpg)
+![schema1](./images_readme/ex5/2.3.png)
 
-![schema1](./images_readme/ex5/7.jpg)
+![schema1](./images_readme/ex5/7.png)
 
 ### ex6 - Convex Optimization & Gradient Descent
 
 #### Descent trajectory with L1 and L2
-![schema1](./images_readme/ex6/gt_l1.jpg)
+![schema1](./images_readme/ex6/gt_l1.png)
 
-![schema1](./images_readme/ex6/gt_l2.jpg)
+![schema1](./images_readme/ex6/gt_l2.png)
 
 #### Compare exponentially decaying rates
 
-![schema1](./images_readme/ex6/compare.jpg)
+![schema1](./images_readme/ex6/compare.png)
 
 #### Regularized Logistic Regression
 
-![schema1](./images_readme/ex6/logistic_regression.jpg)
+![schema1](./images_readme/ex6/logistic_regression.png)
